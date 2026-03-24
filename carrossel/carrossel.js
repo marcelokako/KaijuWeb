@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. A lista de imagens (wallpapers)
     const images = [
-        "images/wp9048980-kaiju-universe-wallpapers.jpg",
-        "images/wp9100754-battra-wallpapers.jpg",
-        "images/wp11723047-kaiju-universe-wallpapers.jpg",
-        "images/wp11723048-kaiju-universe-wallpapers (1).jpg",
-        "images/wp11723048-kaiju-universe-wallpapers.jpg",
-        "images/wp11723109-kaiju-universe-wallpapers.jpg",
-        "images/wp11723164-kaiju-universe-wallpapers.jpg",
+        "carrossel/images/wp9048980-kaiju-universe-wallpapers.jpg",
+        "carrossel/images/wp9100754-battra-wallpapers.jpg",
+        "carrossel/images/wp11723047-kaiju-universe-wallpapers.jpg",
+        "carrossel/images/wp11723048-kaiju-universe-wallpapers (1).jpg",
+        "carrossel/images/wp11723048-kaiju-universe-wallpapers.jpg",
+        "carrossel/images/wp11723109-kaiju-universe-wallpapers.jpg",
+        "carrossel/images/wp11723164-kaiju-universe-wallpapers.jpg",
     ];
     // 2. Variáveis de estado
     const carouselContainer = document.getElementById('background-carousel');
