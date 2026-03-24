@@ -1,3 +1,74 @@
+.hidden {
+    display: none !important;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #00f0ff;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.8);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #ff4500;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.4);
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.8);
+}
+
+fieldset {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    color: #00f0ff;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.radio-option {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.radio-option:hover {
+    background: #2a2a2a;
+    border-color: #00f0ff;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -10,7 +81,7 @@ body {
 header {
     background: linear-gradient(135deg, #000000 0%, #121212 100%);
     color: white;
-    padding: 2.5rem 0;
+    padding: 1rem 0;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 240, 255, 0.15);
     border-bottom: 2px solid #00f0ff;
@@ -160,16 +231,16 @@ aside a:hover {
 footer {
     background-color: #050505;
     color: #888;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 8.3rem;
     font-size: 0.9rem;
     border-top: 1px solid #222;
 }
 
 footer p,
 footer address {
-    margin: 5px 0;
+    margin: 0px 0;
 }
 
 footer a {
@@ -203,4 +274,10 @@ small {
     h2 {
         font-size: 1.4rem;
     }
+}
+
+#start-btn {
+    display: block;
+    width: max-content;
+    margin: 1.25rem auto 0;
 }

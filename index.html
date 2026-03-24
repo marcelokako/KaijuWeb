@@ -1,55 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aluno: Marcelo Camilo Gomes - Portal de Kaijus</title>
+    <title>Qual Kaiju Você É? | Descubra seu Titã Interior</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrossel.css">
 </head>
-
 <body>
+    <div id="background-carousel"></div>
     <header>
-        <h1>Qual Kaiju é Você?</h1>
-        <nav>
+        <h1>Qual Kaiju Você É?</h1>
+        <nav aria-label="Navegação principal">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Monstros</a></li>
+                <li><a href="index.html" aria-current="page">Fazer o Teste</a></li>
+                <li><a href="monstros.html">Monstros</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article>
-            <h2>Godzilla: O Rei dos Monstros Retorna Maior que Nunca</h2>
-            <p>A criatura titânica desperta novamente, desafiando tudo que a humanidade conhece sobre o poder
-                destrutivo. Sua silhueta colossal aparece no horizonte, causando pânico nas principais cidades do
-                mundo...</p>
-            <p><a href="#">Leia mais</a></p>
+        <article id="intro-section">
+            <h2>Descubra sua Verdadeira Natureza</h2>
+            <p>Você é um protetor da Terra, uma força implacável da natureza ou um destruidor vindo do espaço? Responda a este questionário de personalidade e descubra qual Titã do universo de Godzilla reflete sua alma.</p>
+            <button id="start-btn" class="btn-primary" aria-label="Iniciar o questionário">Iniciar Teste</button>
         </article>
 
-        <article>
-            <h2>Mothra: A Rainha Alada Emerge das Profundezas Mitológicas</h2>
-            <p>Uma entidade antiga e mística desacorda após séculos de sono. Os antigos textos falam de sua ligação
-                espiritual com a humanidade, trazendo tanto esperança quanto incerteza para o futuro...</p>
-            <p><a href="#">Leia mais</a></p>
+        <article id="quiz-section" class="hidden" aria-live="polite">
+            <h2>Análise em Andamento...</h2>
+            <form id="quiz-form">
+                <fieldset id="question-container">
+                    <legend id="question-text">Carregando pergunta...</legend>
+                    
+                    <div id="options-container">
+                        </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <p id="progress-text">Pergunta 1 de X</p>
+                    <button type="submit" id="next-btn" class="btn-primary">Próxima Pergunta</button>
+                </div>
+            </form>
+        </article>
+
+        <article id="result-section" class="hidden" aria-live="assertive">
+            <h2>Alinhamento Concluído!</h2>
+            <p>Sua assinatura radioativa bate com a do Kaiju:</p>
+            
+            <div class="kaiju-card">
+                <h3 id="kaiju-name">Nome do Kaiju</h3>
+                <figure>
+                    <img id="kaiju-image" src="" alt="Imagem do Kaiju revelado">
+                    <figcaption id="kaiju-alignment">Alinhamento: ???</figcaption>
+                </figure>
+                
+                <ul class="kaiju-stats">
+                    <li><strong>Altura:</strong> <span id="kaiju-height">---</span></li>
+                    <li><strong>Habilidade Principal:</strong> <span id="kaiju-ability">---</span></li>
+                    <li><strong>Primeira Aparição:</strong> <span id="kaiju-movie">---</span></li>
+                </ul>
+                
+                <p id="kaiju-description">Descrição detalhada da personalidade e lore do monstro vai aparecer aqui.</p>
+                
+                <button id="restart-btn" class="btn-secondary">Refazer o Teste</button>
+            </div>
         </article>
     </main>
 
-    <aside>
-        <h3>Kaijus Principais</h3>
-        <ul>
-            <li><a href="#">Godzilla</a></li>
-            <li><a href="#">King Ghidorah</a></li>
-            <li><a href="#">Mothra</a></li>
-            <li><a href="#">Rodan</a></li>
-            <li><a href="#">Mechagodzilla</a></li>
-        </ul>
-    </aside>
-
     <footer>
-        <p>&copy; 2026 Portal de Kaijus - Saga Godzilla. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Projeto Kaiju Web. Criado para disciplina aplicações para internet.</p>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
