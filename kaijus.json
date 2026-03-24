@@ -17,7 +17,7 @@
         "qtdFilmes":13,
         "Altura": "104 metros",
         "Peso": "90.000 toneladas",
-        "img": "kaiju/king-kong-1933-wallpapers.jpg"
+        "img": "kaijus/king-kong-1933-wallpapers.jpg"
     },
     "Chaotic Good": {
         "nome": "Godzilla (Showa)", 
@@ -51,7 +51,7 @@
     },
     "Chaotic Neutral": {
         "nome": "Rodan", 
-        "descricao": "O vulcão vivo. Você faz o que quer, segue quem é mais forte no momento e sua simples presença causa caos natural.",
+        "descricao": "O vulcão vivo. Você faz o que quer, segue quem é mais forte no momento, porém a sua simples presença causa caos natural.",
         "habilidade": "Voo Supersônico", 
         "primeiraAparicao": "Rodan (1956)" ,
         "qtdFilmes":5,
@@ -91,8 +91,8 @@
     },
     "Lawful Evil": {
         "nome": "King Ghidorah", 
-        "descricao": "O destruidor de mundos. Você não quer governar, quer apenas aniquilar. Você representa o caos puro e a destruição sem motivo.",
-        "habilidade": "Raios Gravitacionais", 
+        "descricao": "O imperador tirânico do cosmos. Você não busca a destruição irracional, mas sim a submissão absoluta. Para você, o universo precisa de ordem, e essa ordem é ditada pela sua vontade. Você conquista mundos para governá-los com garras de ferro, exigindo lealdade dos mais fracos e punindo qualquer sinal de rebelião ou desobediência com tempestades implacáveis.",
+        "habilidade": "Raios Gravitacionais e Controle Meteorológico", 
         "primeiraAparicao": "Ghidorah, the Three-Headed Monster (1964)" ,
         "qtdFilmes":6,
         "Altura": "140 metros",
