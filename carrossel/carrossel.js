@@ -9,27 +9,26 @@ document.addEventListener('DOMContentLoaded', () => {
         "carrossel/images/wp11723109-kaiju-universe-wallpapers.jpg",
         "carrossel/images/wp11723164-kaiju-universe-wallpapers.jpg",
     ];
-    // 2. Variáveis de estado
-    const carouselContainer = document.getElementById('background-carousel');
-    let currentIndex = 0;
-    const intervalTime = 8000; // Tempo em milissegundos para trocar a imagem (8 segundos)
 
-    // 3. Função para definir a imagem de fundo
+    const carouselContainer = document.getElementsByClassName('background-carousel');
+    let currentIndex = 0;
+    const intervalTime = 8000;
+
+
     function setBackgroundImage() {
         if (images.length === 0) return;
 
-        carouselContainer.style.backgroundImage = `url('${images[currentIndex]}')`;
+        Array.from(carouselContainer).forEach(function(container) {
+            container.style.backgroundImage = `url('${images[currentIndex]}')`;
+        });
     }
 
-    // 4. Função para avançar para a próxima imagem
     function nextImage() {
         currentIndex = (currentIndex + 1) % images.length;
         setBackgroundImage();
     }
 
-    // 5. Inicialização
-    setBackgroundImage(); // Mostra a primeira imagem imediatamente
+    setBackgroundImage();
 
-    // Começa o intervalo para trocar as imagens
     setInterval(nextImage, intervalTime);
 });

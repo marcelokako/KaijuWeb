@@ -1,26 +1,22 @@
-/* =========================================
-   Carrossel de Fundo (Backdrop)
-   ========================================= */
-#background-carousel {
-    position: fixed; /* Fica preso na tela, não rola com o conteúdo */
+.background-carousel {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Coloca ATRAZ de todo o conteúdo */
-    background-size: cover; /* A imagem cobre todo o container */
-    background-position: center; /* Centraliza a imagem */
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.15; /* Sutil para não atrapalhar a leitura (dark!) */
-    transition: background-image 2s ease-in-out; /* Transição suave entre imagens */
+    opacity: 0.15;
+    transition: background-image 2s ease-in-out;
 }
 
-/* Garante que o conteúdo principal e rodapé fiquem "na frente" e com fundo opaco */
 header, main, footer {
     position: relative;
     z-index: 1;
 }
 
 main article {
-    background-color: rgba(18, 18, 18, 0.9); /* Ligeiramente transparente */
+    background-color: rgba(18, 18, 18, 0.9);
 }

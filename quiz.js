@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    // Variável global para armazenar os dados do JSON
     let kaijuData = {};
 
-    // 1. Função para buscar os dados do arquivo JSON
     async function carregarDadosKaijus() {
         try {
             const resposta = await fetch('kaijus.json');
@@ -17,10 +15,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    // Carrega os dados assim que a página abre
     await carregarDadosKaijus();
 
-    // 2. Perguntas (mantidas no JS para controlar a lógica do quiz)
     const questions = [
         {
             text: "Você acorda do seu sagrado sono de titã e descobre que a humanidade construiu uma metrópole gigante bem no meio do seu território favorito. O que você faz?",
@@ -160,7 +156,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     function finishQuiz() {
         quizSection.classList.add('hidden');
         
-        // Calcular Alinhamento Final
         let finalOrder = "Neutral";
         let finalMorality = "Neutral";
 
