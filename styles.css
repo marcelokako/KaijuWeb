@@ -329,3 +329,21 @@ small {
     font-size: 1.2rem;
     color: #e0e0e0;
 }
+
+.video-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .video-container iframe {
+        height: 250px;
+    }
+}
