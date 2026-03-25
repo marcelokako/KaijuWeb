@@ -7,7 +7,8 @@
         "qtdFilmes":9,
         "Altura": "120 metros",
         "Peso": "25.000 toneladas",
-        "img": "kaijus/Mothra_2004.jpg"
+        "img": "kaijus/Mothra_2004.jpg",
+        "trailer": "https://www.youtube.com/embed/IWU3gF1_3xk"
     },
     "Neutral Good": {
         "nome": "Kong", 
@@ -17,7 +18,8 @@
         "qtdFilmes":13,
         "Altura": "104 metros",
         "Peso": "90.000 toneladas",
-        "img": "kaijus/king-kong-1933-wallpapers.jpg"
+        "img": "kaijus/king-kong-1933-wallpapers.jpg",
+        "trailer": "https://www.youtube.com/embed/PbrikL8IjXM"
     },
     "Chaotic Good": {
         "nome": "Godzilla (Showa)", 
@@ -27,17 +29,19 @@
         "qtdFilmes":15,
         "Altura": "50 metros",
         "Peso": "20.000 toneladas",
-        "img": "kaijus/godzilla-1954-wallpapers.jpg"
+        "img": "kaijus/godzilla-1954-wallpapers.jpg",
+        "trailer": "https://www.youtube.com/embed/GuV-Vb1PlSU"
     },
     "Lawful Neutral": {
         "nome": "Mechagodzilla", 
         "descricao": "A máquina programada para a ordem. Você segue diretrizes estritas e faz o que é necessário para manter o sistema funcionando, sem emoções atrapalhando.",
         "habilidade": "Canhão Zero Absoluto", 
-        "primeiraAparicao": "Godzilla Against Mechagodzilla (1974)" ,
+        "primeiraAparicao": "Godzilla vs. Mechagodzilla (1974)" ,
         "qtdFilmes":5,
         "Altura": "120 metros",
         "Peso": "150.000 toneladas",
-        "img": "kaijus/showa-mechagodzilla-wallpapers.png"
+        "img": "kaijus/showa-mechagodzilla-wallpapers.png",
+        "trailer": "https://www.youtube.com/embed/Q6nue5cHYJc"
     },
     "True Neutral": {
         "nome": "Shin Godzilla", 
@@ -47,7 +51,8 @@
         "qtdFilmes":1,
         "Altura": "300 metros",
         "Peso": "100.000 toneladas",
-        "img": "kaijus/shin-godzilla-4k-wallpapers.jpg"
+        "img": "kaijus/shin-godzilla-4k-wallpapers.jpg",
+        "trailer": "https://www.youtube.com/embed/3qX1ZU3jcfU"
     },
     "Chaotic Neutral": {
         "nome": "Rodan", 
@@ -57,7 +62,8 @@
         "qtdFilmes":5,
         "Altura": "100 metros",
         "Peso": "30.000 toneladas",
-        "img": "kaijus/rodan_1993.jpg"
+        "img": "kaijus/rodan_1993.jpg",
+        "trailer": "https://www.youtube.com/embed/fONQK87h1X0"
     },
     "Neutral Evil": {
         "nome": "SpaceGodzilla", 
@@ -67,7 +73,8 @@
         "qtdFilmes":1,
         "Altura": "120 metros",
         "Peso": "80.000 toneladas",
-        "img": "kaijus/spacegodzilla.jpg"
+        "img": "kaijus/spacegodzilla.jpg",
+        "trailer": "https://www.youtube.com/embed/u0LTRmEoTjM"
     },
     "Chaotic Evil": {
         "nome": "Destoroyah", 
@@ -77,7 +84,8 @@
         "qtdFilmes":1,
         "Altura": "120 metros",
         "Peso": "80.000 toneladas",
-        "img": "kaijus/mo_destroyah_main.jpg"
+        "img": "kaijus/mo_destroyah_main.jpg",
+        "trailer": "https://www.youtube.com/embed/NCNyFPRzI8c"
     },
     "Chaotic Evil 2": {
         "nome": "Gigan", 
@@ -87,7 +95,8 @@
         "qtdFilmes":3,
         "Altura": "120 metros",
         "Peso": "60.000 toneladas",
-        "img": "kaijus/Gigan_2004_3.jpg"
+        "img": "kaijus/Gigan_2004_3.jpg",
+        "trailer": "https://www.youtube.com/embed/7wuS1WS-0FY"
     },
     "Lawful Evil": {
         "nome": "King Ghidorah", 
@@ -97,6 +106,7 @@
         "qtdFilmes":6,
         "Altura": "140 metros",
         "Peso": "70.000 toneladas",
-        "img": "kaijus/Ghidorah_Showa_1.jpg"
+        "img": "kaijus/Ghidorah_Showa_1.jpg",
+        "trailer": "https://www.youtube.com/embed/HNqlaMxNdb4"
     }
 }

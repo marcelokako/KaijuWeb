@@ -15,7 +15,7 @@
         <nav aria-label="Navegação principal">
             <ul>
                 <li><a href="../index.html">Fazer o Teste</a></li>
-                <li><a href="monstro.html" aria-current="page">Enciclopédia</a></li>
+                <li><a href="monstros.html" aria-current="page">Enciclopédia</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +30,7 @@
         </article>
 
         <article id="kaiju-detail-section" class="hidden" aria-live="polite">
-            <button id="back-btn" class="btn-secondary">← Voltar para a Lista</button>
+            <button id="back-btn" class="btn-primary">← Voltar para a Lista</button>
             
             <div class="kaiju-card" style="margin-top: 20px;">
                 <h3 id="detail-name">Nome do Kaiju</h3>
@@ -48,6 +48,10 @@
                 </ul>
                 
                 <p id="detail-description"></p>
+                <div id="trailer-container" class="video-container hidden">
+                    <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; border-top: 1px solid #333; padding-top: 1rem;">Trailer</h3>
+                    <iframe id="detail-trailer" width="100%" height="400" src="" title="Trailer do Kaiju" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </article>
     </main>

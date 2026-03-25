@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const detailMovie = document.getElementById('detail-movie');
     const detailMoviesCount = document.getElementById('detail-movies-count');
     const detailDescription = document.getElementById('detail-description');
+    const detailTrailer = document.getElementById('detail-trailer');
+    const trailerContainer = document.getElementById('trailer-container');
 
     try {
         const response = await fetch('../kaijus.json');
@@ -57,6 +59,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         detailMoviesCount.textContent = kaiju.qtdFilmes;
         detailDescription.textContent = kaiju.descricao;
 
+        if (kaiju.trailer && kaiju.trailer !== "") {
+            detailTrailer.src = kaiju.trailer;
+            trailerContainer.classList.remove('hidden');
+        } else {
+            detailTrailer.src = "";
+            trailerContainer.classList.add('hidden');
+        }
+
         listSection.classList.add('hidden');
         detailSection.classList.remove('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -65,5 +75,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     backBtn.addEventListener('click', () => {
         detailSection.classList.add('hidden');
         listSection.classList.remove('hidden');
+        detailTrailer.src = "";
     });
 });

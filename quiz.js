@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const optionsContainer = document.getElementById('options-container');
     const progressText = document.getElementById('progress-text');
     const quizForm = document.getElementById('quiz-form');
-
     const kaijuNameEl = document.getElementById('kaiju-name');
     const kaijuDescEl = document.getElementById('kaiju-description');
     const kaijuAlignEl = document.getElementById('kaiju-alignment');
@@ -100,6 +99,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const kaijuImageEl = document.getElementById('kaiju-image');    
     const kaijuWeightEl = document.getElementById('kaiju-weight');
     const kaijuMoviesCountEl = document.getElementById('kaiju-movies-count');
+    const detailTrailer = document.getElementById('kaiju-trailer');
+    const trailerContainer = document.getElementById('kaiju-trailer-container');
 
     startBtn.addEventListener('click', () => {
         if (Object.keys(kaijuData).length === 0) {
@@ -181,12 +182,18 @@ document.addEventListener('DOMContentLoaded', async () => {
         kaijuAbilityEl.textContent = resultKaiju.habilidade;
         kaijuMovieEl.textContent = resultKaiju.primeiraAparicao;
         kaijuHeightEl.textContent = resultKaiju.Altura;
-        
         kaijuImageEl.src = resultKaiju.img;
         kaijuImageEl.alt = `Imagem do Kaiju ${resultKaiju.nome}`;
+        kaijuWeightEl.textContent = resultKaiju.Peso;
+        kaijuMoviesCountEl.textContent = resultKaiju.qtdFilmes;
 
-        if(kaijuWeightEl) kaijuWeightEl.textContent = resultKaiju.Peso;
-        if(kaijuMoviesCountEl) kaijuMoviesCountEl.textContent = resultKaiju.qtdFilmes;
+        if (resultKaiju.trailer && resultKaiju.trailer !== "") {
+            detailTrailer.src = resultKaiju.trailer;
+            trailerContainer.classList.remove('hidden');
+        } else {
+            detailTrailer.src = "";
+            trailerContainer.classList.add('hidden');
+        }
 
         resultSection.classList.remove('hidden');
     }
